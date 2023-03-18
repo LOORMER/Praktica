@@ -32,7 +32,9 @@
             this.простейшиеЗадачиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.математическиеИФизическиеЗадачиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ветвленияToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ветвления2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.работаСТекстомToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.множестваToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.работаССпискамиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.работаСМассивамиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.работаСКнопкамиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,8 +43,9 @@
             this.файлыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ветвления2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.множестваToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dowhilewhileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.тематикаСписковToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.таблицыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -89,16 +92,34 @@
             this.ветвленияToolStripMenuItem.Text = "Ветвления. ";
             this.ветвленияToolStripMenuItem.Click += new System.EventHandler(this.ветвленияToolStripMenuItem_Click);
             // 
+            // ветвления2ToolStripMenuItem
+            // 
+            this.ветвления2ToolStripMenuItem.Name = "ветвления2ToolStripMenuItem";
+            this.ветвления2ToolStripMenuItem.Size = new System.Drawing.Size(292, 22);
+            this.ветвления2ToolStripMenuItem.Text = "Ветвления 2";
+            this.ветвления2ToolStripMenuItem.Click += new System.EventHandler(this.ветвления2ToolStripMenuItem_Click);
+            // 
             // работаСТекстомToolStripMenuItem
             // 
             this.работаСТекстомToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.множестваToolStripMenuItem});
+            this.множестваToolStripMenuItem,
+            this.dowhilewhileToolStripMenuItem});
             this.работаСТекстомToolStripMenuItem.Name = "работаСТекстомToolStripMenuItem";
             this.работаСТекстомToolStripMenuItem.Size = new System.Drawing.Size(113, 20);
             this.работаСТекстомToolStripMenuItem.Text = "Работа с текстом";
             // 
+            // множестваToolStripMenuItem
+            // 
+            this.множестваToolStripMenuItem.Name = "множестваToolStripMenuItem";
+            this.множестваToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.множестваToolStripMenuItem.Text = "Множества";
+            this.множестваToolStripMenuItem.Click += new System.EventHandler(this.множестваToolStripMenuItem_Click);
+            // 
             // работаССпискамиToolStripMenuItem
             // 
+            this.работаССпискамиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.тематикаСписковToolStripMenuItem,
+            this.таблицыToolStripMenuItem});
             this.работаССпискамиToolStripMenuItem.Name = "работаССпискамиToolStripMenuItem";
             this.работаССпискамиToolStripMenuItem.Size = new System.Drawing.Size(123, 20);
             this.работаССпискамиToolStripMenuItem.Text = "Работа с списками";
@@ -146,19 +167,26 @@
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
-            // ветвления2ToolStripMenuItem
+            // dowhilewhileToolStripMenuItem
             // 
-            this.ветвления2ToolStripMenuItem.Name = "ветвления2ToolStripMenuItem";
-            this.ветвления2ToolStripMenuItem.Size = new System.Drawing.Size(292, 22);
-            this.ветвления2ToolStripMenuItem.Text = "Ветвления 2";
-            this.ветвления2ToolStripMenuItem.Click += new System.EventHandler(this.ветвления2ToolStripMenuItem_Click);
+            this.dowhilewhileToolStripMenuItem.Name = "dowhilewhileToolStripMenuItem";
+            this.dowhilewhileToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dowhilewhileToolStripMenuItem.Text = "do...while,while";
+            this.dowhilewhileToolStripMenuItem.Click += new System.EventHandler(this.dowhilewhileToolStripMenuItem_Click);
             // 
-            // множестваToolStripMenuItem
+            // тематикаСписковToolStripMenuItem
             // 
-            this.множестваToolStripMenuItem.Name = "множестваToolStripMenuItem";
-            this.множестваToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.множестваToolStripMenuItem.Text = "Множества";
-            this.множестваToolStripMenuItem.Click += new System.EventHandler(this.множестваToolStripMenuItem_Click);
+            this.тематикаСписковToolStripMenuItem.Name = "тематикаСписковToolStripMenuItem";
+            this.тематикаСписковToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.тематикаСписковToolStripMenuItem.Text = "Тематика списков";
+            this.тематикаСписковToolStripMenuItem.Click += new System.EventHandler(this.тематикаСписковToolStripMenuItem_Click);
+            // 
+            // таблицыToolStripMenuItem
+            // 
+            this.таблицыToolStripMenuItem.Name = "таблицыToolStripMenuItem";
+            this.таблицыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.таблицыToolStripMenuItem.Text = "Таблицы";
+            this.таблицыToolStripMenuItem.Click += new System.EventHandler(this.таблицыToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -194,6 +222,9 @@
         private System.Windows.Forms.ToolStripMenuItem ветвленияToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ветвления2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem множестваToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem dowhilewhileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem тематикаСписковToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem таблицыToolStripMenuItem;
     }
 }
 

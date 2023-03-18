@@ -51,5 +51,26 @@ namespace Практика
             fr5.Show();
             this.Hide();
         }
+
+        private void dowhilewhileToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form6 fr6 = new Form6();
+            fr6.Show();
+            this.Hide();
+        }
+
+        private void тематикаСписковToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form7 fr7 = new Form7();
+            fr7.Show();
+            this.Hide();
+        }
+
+        private void таблицыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form8 fr8 = new Form8();
+            fr8.Show();
+            this.Hide();
+        }
     }
 }

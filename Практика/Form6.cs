@@ -10,27 +10,18 @@ using System.Windows.Forms;
 
 namespace Практика
 {
-    public partial class Form5 : Form
+    public partial class Form6 : Form
     {
-        public Form5()
+        public Form6()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Add(textBox1.Text);
-            
-            
-            
-        
-            
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            
-
+            double a = Convert.ToDouble(numericUpDown1.Value);
+            double y = a * (a + 1) / 2;
+            label1.Text = Convert.ToString(y);
         }
     }
 }
