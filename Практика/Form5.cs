@@ -29,7 +29,22 @@ namespace Практика
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            string b = "";
+            string c = "";
+            string a = textBox1.Text;
+            for (int i = 0; i < a.Length; i++)
+            {
+                if(a[i] >= '0' && a[i] <= '9')
+                {
+                    b += a[i];
+                }
+                else
+                {
+                    c += a[i];
+                }
+                
+            }
+            MessageBox.Show( "Буквы в строке" + c);
 
         }
     }

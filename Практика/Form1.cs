@@ -22,7 +22,7 @@ namespace Практика
             this.Close();
         }
 
-     
+
 
         private void математическиеИФизическиеЗадачиToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -70,6 +70,21 @@ namespace Практика
         {
             Form8 fr8 = new Form8();
             fr8.Show();
+            this.Hide();
+
+
+        }
+
+        private void массивыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+          
+        }
+
+        private void массивыToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Form9 fr9 = new Form9();
+            fr9.Show();
             this.Hide();
         }
     }
