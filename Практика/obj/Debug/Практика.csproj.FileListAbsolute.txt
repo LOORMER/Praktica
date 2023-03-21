@@ -30,3 +30,5 @@ D:\praktika\Praktica\Практика\obj\Debug\Практика.pdb
 D:\praktika\Praktica\Практика\obj\Debug\Практика.Form7.resources
 D:\praktika\Praktica\Практика\obj\Debug\Практика.Form8.resources
 D:\praktika\Praktica\Практика\obj\Debug\Практика.Form9.resources
+D:\praktika\Praktica\Практика\obj\Debug\Практика.Form10.resources
+D:\praktika\Praktica\Практика\obj\Debug\Практика.Form11.resources

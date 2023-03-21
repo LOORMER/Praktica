@@ -32,15 +32,8 @@ namespace Практика
                 {
                     a[i, j] = rand.Next(0, 50);
                     dataGridView1.Rows[i].Cells[j].Value = a[i, j];
-                  
-                    
-
                 }
-                
-
             }
-           
-            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -58,49 +51,29 @@ namespace Практика
                 jMin = 0;
                 jMax = 0;
                 for (int j = 0; j < a.GetLength(1); j++)
-
                 {
-
                     if (a[i, j] <= Min)
                     {
                         Min = a[i, j];
                         jMin = j;
-
                     }
                     if (a[i, j] >= Max)
                     {
                         Max = a[i, j];
                         jMax = j;
                     }
-
-
                 }
                 a[i, jMin] = Max;
                 a[i, jMax] = Min;
-
-
             }
             for (int i = 0; i < a.GetLength(0); i++)
             {
                 for (int j = 0; j < a.GetLength(1); j++)
                 {
-                   
+
                     dataGridView1.Rows[i].Cells[j].Value = a[i, j];
-
-
-
                 }
-
-
             }
-
-
-
-
-
-
-
-
         }
     }
 }
