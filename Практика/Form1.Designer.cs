@@ -41,15 +41,17 @@
             this.таблицыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.работаСМассивамиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.массивыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.строкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.сортировкаМассиваToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.работаСКнопкамиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.программыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.работаСПереключателямиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.работаСИзображениямиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.файлыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справкаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.выходToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.строкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.сортировкаМассиваToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.программыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.подпрограммыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.подпрограммы1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -162,17 +164,40 @@
             // массивыToolStripMenuItem
             // 
             this.массивыToolStripMenuItem.Name = "массивыToolStripMenuItem";
-            this.массивыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.массивыToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.массивыToolStripMenuItem.Text = "Массивы";
             this.массивыToolStripMenuItem.Click += new System.EventHandler(this.массивыToolStripMenuItem_Click_1);
+            // 
+            // строкиToolStripMenuItem
+            // 
+            this.строкиToolStripMenuItem.Name = "строкиToolStripMenuItem";
+            this.строкиToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.строкиToolStripMenuItem.Text = "Строки";
+            this.строкиToolStripMenuItem.Click += new System.EventHandler(this.строкиToolStripMenuItem_Click);
+            // 
+            // сортировкаМассиваToolStripMenuItem
+            // 
+            this.сортировкаМассиваToolStripMenuItem.Name = "сортировкаМассиваToolStripMenuItem";
+            this.сортировкаМассиваToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.сортировкаМассиваToolStripMenuItem.Text = "Сортировка массива";
+            this.сортировкаМассиваToolStripMenuItem.Click += new System.EventHandler(this.сортировкаМассиваToolStripMenuItem_Click);
             // 
             // работаСКнопкамиToolStripMenuItem
             // 
             this.работаСКнопкамиToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.программыToolStripMenuItem});
+            this.программыToolStripMenuItem,
+            this.подпрограммыToolStripMenuItem,
+            this.подпрограммы1ToolStripMenuItem});
             this.работаСКнопкамиToolStripMenuItem.Name = "работаСКнопкамиToolStripMenuItem";
             this.работаСКнопкамиToolStripMenuItem.Size = new System.Drawing.Size(124, 20);
             this.работаСКнопкамиToolStripMenuItem.Text = "Работа с кнопками";
+            // 
+            // программыToolStripMenuItem
+            // 
+            this.программыToolStripMenuItem.Name = "программыToolStripMenuItem";
+            this.программыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.программыToolStripMenuItem.Text = "Программы ";
+            this.программыToolStripMenuItem.Click += new System.EventHandler(this.программыToolStripMenuItem_Click);
             // 
             // работаСПереключателямиToolStripMenuItem
             // 
@@ -205,26 +230,19 @@
             this.выходToolStripMenuItem.Text = "Выход";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.выходToolStripMenuItem_Click);
             // 
-            // строкиToolStripMenuItem
+            // подпрограммыToolStripMenuItem
             // 
-            this.строкиToolStripMenuItem.Name = "строкиToolStripMenuItem";
-            this.строкиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.строкиToolStripMenuItem.Text = "Строки";
-            this.строкиToolStripMenuItem.Click += new System.EventHandler(this.строкиToolStripMenuItem_Click);
+            this.подпрограммыToolStripMenuItem.Name = "подпрограммыToolStripMenuItem";
+            this.подпрограммыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.подпрограммыToolStripMenuItem.Text = "Подпрограммы";
+            this.подпрограммыToolStripMenuItem.Click += new System.EventHandler(this.подпрограммыToolStripMenuItem_Click);
             // 
-            // сортировкаМассиваToolStripMenuItem
+            // подпрограммы1ToolStripMenuItem
             // 
-            this.сортировкаМассиваToolStripMenuItem.Name = "сортировкаМассиваToolStripMenuItem";
-            this.сортировкаМассиваToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.сортировкаМассиваToolStripMenuItem.Text = "Сортировка массива";
-            this.сортировкаМассиваToolStripMenuItem.Click += new System.EventHandler(this.сортировкаМассиваToolStripMenuItem_Click);
-            // 
-            // программыToolStripMenuItem
-            // 
-            this.программыToolStripMenuItem.Name = "программыToolStripMenuItem";
-            this.программыToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.программыToolStripMenuItem.Text = "Программы ";
-            this.программыToolStripMenuItem.Click += new System.EventHandler(this.программыToolStripMenuItem_Click);
+            this.подпрограммы1ToolStripMenuItem.Name = "подпрограммы1ToolStripMenuItem";
+            this.подпрограммы1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.подпрограммы1ToolStripMenuItem.Text = "Подпрограммы 1";
+            this.подпрограммы1ToolStripMenuItem.Click += new System.EventHandler(this.подпрограммы1ToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -267,6 +285,8 @@
         private System.Windows.Forms.ToolStripMenuItem строкиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem сортировкаМассиваToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem программыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem подпрограммыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem подпрограммы1ToolStripMenuItem;
     }
 }
 

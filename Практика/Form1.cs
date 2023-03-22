@@ -108,5 +108,20 @@ namespace Практика
             fr12.Show();
             this.Hide();
         }
+
+        private void подпрограммыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form13 fr13 = new Form13();
+            fr13.Show();
+            this.Hide();
+
+        }
+
+        private void подпрограммы1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form14 fr14 = new Form14();
+            fr14.Show();
+            this.Hide();
+        }
     }
 }
