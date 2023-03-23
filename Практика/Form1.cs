@@ -123,5 +123,19 @@ namespace Практика
             fr14.Show();
             this.Hide();
         }
+
+        private void графикФункцииToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form15 fr15 = new Form15();
+            fr15.Show();
+            this.Hide();
+        }
+
+        private void графикаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form16 fr16 = new Form16();
+            fr16.Show();
+            this.Hide();
+        }
     }
 }

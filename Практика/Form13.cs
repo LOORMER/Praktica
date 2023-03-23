@@ -36,65 +36,90 @@ namespace Практика
 
         private void button2_Click(object sender, EventArgs e)
         {
-            a = new int[4, 4];
-            b = new int[4, 4];
-
-            Random rand = new Random();
-            dataGridView1.RowCount = a.GetLength(0);
-            dataGridView2.RowCount = a.GetLength(0);
-            dataGridView1.ColumnCount = b.GetLength(1);
-            dataGridView2.ColumnCount = b.GetLength(1);
-            
-            for (int i = 0; i < a.GetLength(0); i++)
+            try
             {
-                for (int j = 0; j < a.GetLength(1); j++)
+
+
+                a = new int[4, 4];
+                b = new int[4, 4];
+
+                Random rand = new Random();
+                dataGridView1.RowCount = a.GetLength(0);
+                dataGridView2.RowCount = a.GetLength(0);
+                dataGridView1.ColumnCount = b.GetLength(1);
+                dataGridView2.ColumnCount = b.GetLength(1);
+
+                for (int i = 0; i < a.GetLength(0); i++)
                 {
-                    a[i, j] = rand.Next(1, 40);
-                    b[i, j] = rand.Next(1, 40);
-                    dataGridView1.Rows[i].Cells[j].Value = a[i, j];
-                    dataGridView2.Rows[i].Cells[j].Value = b[i, j];
-
-                    if(a[i,j] > c)
+                    for (int j = 0; j < a.GetLength(1); j++)
                     {
-                        c = a[i, j];
-                    }
+                        a[i, j] = rand.Next(1, 40);
+                        b[i, j] = rand.Next(1, 40);
+                        dataGridView1.Rows[i].Cells[j].Value = a[i, j];
+                        dataGridView2.Rows[i].Cells[j].Value = b[i, j];
 
-                    if (b[i, j] > bruh)
-                    {
-                        bruh = b[i, j];
+                        if (a[i, j] > c)
+                        {
+                            c = a[i, j];
+                        }
+
+                        if (b[i, j] > bruh)
+                        {
+                            bruh = b[i, j];
+                        }
+
+
+
                     }
-                 
-                    
-                        
+                }
+                if (c > bruh)
+                {
+                    max = c;
+                    s = -1;
+                }
+                if (bruh == c)
+                {
+                    s = 0;
+                }
+                if (bruh > c)
+                {
+                    s = 1;
+                    max = bruh;
                 }
             }
-            if (c > bruh)
+            catch
             {
-                max = c;
-                s = -1;
-            }
-            if (bruh == c)
-            {
-                s = 0;
-            }
-            if (bruh > c)
-            {
-                s = 1;
-                max = bruh;
+                MessageBox.Show(" МАССИВ НЕ ЗАПОЛНЕН!!!!");
             }
 
 
-
+        
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(s.ToString());
+            
+            
+                MessageBox.Show(s.ToString());
+            
+            
+            
+                
+            
+           
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(max.ToString());
+            
+            
+                MessageBox.Show(max.ToString());
+           
+            
+            
+                
+            
+            
         }
     }
 }

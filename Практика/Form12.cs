@@ -25,22 +25,26 @@ namespace Практика
             if (5 <= x && x < 10) 
             {
                 y = 1 - Math.Sin(x);
+                y = Math.Round(y, 2);
                 label2.Text = (y.ToString());
             }
             if (10 <= x && x < 15)
             {
                 y = (1 + Math.Cos(x)) / 2;
+                y = Math.Round(y, 2);
                 label2.Text = (y.ToString());
             }
             if (15 <= x && x < 20)
             {
                 y = Math.Tan(x) / 3;
+                y = Math.Round(y, 2);
                 label2.Text = (y.ToString());
             }
             if (20 <= x && x < 25) 
 
             {
                 y = ctg;
+                y = Math.Round(y, 2);
                 label2.Text = (y.ToString());
             }
         }

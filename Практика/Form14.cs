@@ -20,7 +20,11 @@ namespace Практика
         public static int[,] b;
         public static int c = 0;
         public static int d = 0;
-
+        // public static double x = 0;
+        public static int y;
+        public static double[] x;
+        public static double[] y1 = new double[10];
+  
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -68,9 +72,46 @@ namespace Практика
 
         private void button2_Click(object sender, EventArgs e)
         {
-            double x = Convert.ToDouble(maskedTextBox1.Text);
-            double y = c * Math.Pow(x, 2) + d;
-            listBox1.Items.Add(y.ToString());
+            try
+            {
+
+
+
+                for (int i = 0; i < x.Length; i++)
+                {
+                    y1[i] = c * Math.Pow(x[i], 2) + d;
+                    textBox2.Text += y1[i].ToString() + " ";
+                }
+            }
+            catch
+            {
+                MessageBox.Show(" сначала заполни массив и заполни X");
+            }
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+             x = new double[10];
+            x[0] = 0.1;
+            x[1] = 0.2;
+            x[2] = 0.3;
+            x[3] = 0.4;
+            x[4] = 0.5;
+            x[5] = 0.6;
+            x[6] = 0.7;
+            x[7] = 0.8;
+            x[8] = 0.9;
+            x[9] = 1;
+            this.textBox1.Text = (x[0]).ToString() + " " + (x[1]).ToString() + " " + (x[2]).ToString() + " " + (x[3]).ToString() + " " + (x[4]).ToString() + " " + (x[5]).ToString() + " " + (x[6]).ToString() + " " + (x[7]).ToString() + " " + (x[8]).ToString() + " " + (x[9]).ToString();
+
+
+
+
         }
     }
 }
