@@ -37,3 +37,11 @@ D:\praktika\Praktica\Практика\obj\Debug\Практика.Form13.resource
 D:\praktika\Praktica\Практика\obj\Debug\Практика.Form14.resources
 D:\praktika\Praktica\Практика\obj\Debug\Практика.Form15.resources
 D:\praktika\Praktica\Практика\obj\Debug\Практика.Form16.resources
+D:\praktika\Praktica\Практика\obj\Debug\Практика.Form17.resources
+D:\praktika\Praktica\Практика\obj\Debug\Практика.Form18.resources
+D:\praktika\Praktica\Практика\bin\Debug\Interop.WMPLib.dll
+D:\praktika\Praktica\Практика\bin\Debug\AxInterop.WMPLib.dll
+D:\praktika\Praktica\Практика\obj\Debug\Interop.WMPLib.dll
+D:\praktika\Praktica\Практика\obj\Debug\AxInterop.WMPLib.dll
+D:\praktika\Praktica\Практика\obj\Debug\Практика.csproj.ResolveComReference.cache
+D:\praktika\Praktica\Практика\obj\Debug\Практика.Form19.resources
