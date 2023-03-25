@@ -45,3 +45,5 @@ D:\praktika\Praktica\Практика\obj\Debug\Interop.WMPLib.dll
 D:\praktika\Praktica\Практика\obj\Debug\AxInterop.WMPLib.dll
 D:\praktika\Praktica\Практика\obj\Debug\Практика.csproj.ResolveComReference.cache
 D:\praktika\Praktica\Практика\obj\Debug\Практика.Form19.resources
+D:\praktika\Praktica\Практика\obj\Debug\Практика.Form20.resources
+D:\praktika\Praktica\Практика\obj\Debug\Практика.Form21.resources
