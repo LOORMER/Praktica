@@ -47,3 +47,6 @@ D:\praktika\Praktica\Практика\obj\Debug\Практика.csproj.ResolveC
 D:\praktika\Praktica\Практика\obj\Debug\Практика.Form19.resources
 D:\praktika\Praktica\Практика\obj\Debug\Практика.Form20.resources
 D:\praktika\Praktica\Практика\obj\Debug\Практика.Form21.resources
+D:\praktika\Praktica\Практика\obj\Debug\Практика.Form22.resources
+D:\praktika\Praktica\Практика\obj\Debug\Практика.Form23.resources
+D:\praktika\Praktica\Практика\obj\Debug\Практика.Form24.resources

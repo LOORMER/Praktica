@@ -16,5 +16,21 @@ namespace Практика
         {
             InitializeComponent();
         }
+        public static string str;
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            str = textBox1.Text;
+            char str_char = 'а';
+            for (int i = 0; i < str.Length; i++)
+            {
+                if(str[i] == str_char)
+                {
+                    str = str.Remove(i, 1);
+                }
+            }
+            textBox1.Text = str;
+        }
     }
 }
