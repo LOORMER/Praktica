@@ -14,9 +14,10 @@ namespace Практика
         [STAThread]
         static void Main()
         {
+            Form26 starr = new Form26();
             Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            //Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(starr);
         }
     }
 }

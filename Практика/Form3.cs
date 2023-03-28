@@ -24,6 +24,10 @@ namespace Практика
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+
+            
             double y;
             double x = int.Parse(maskedTextBox1.Text);
             if(x >= 0)
@@ -38,7 +42,13 @@ namespace Практика
                 y = Math.Round(y, 2);
                 label1.Text = Convert.ToString(y);
             }
-            
+            }
+            catch
+            {
+                MessageBox.Show("Введите Х");
+            }
+
+
         }
 
         

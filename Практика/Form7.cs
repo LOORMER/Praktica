@@ -16,6 +16,7 @@ namespace Практика
         {
             InitializeComponent();
         }
+        
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -28,7 +29,10 @@ namespace Практика
                 " Аэродромная 5Б; " +
                 "Южный микрорайон ОБЩАГА; " +
                 "Ул Ленинская дом120; " +
-                " Советская 56;"); 
+                " Советская 56;");
+            Form25 fr25 = new Form25();
+            fr25.Show();
+            fr25.listbox = listBox1;
         }
     }
 }

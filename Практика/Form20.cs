@@ -44,6 +44,7 @@ namespace Практика
                 sw.Close();
             }
             button2.Enabled = true;
+            button4.Enabled = true;
 
 
         }
@@ -78,16 +79,16 @@ namespace Практика
 
         private void button4_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Add(textBox1.Text);
-            for (int i = 0; i < listBox1.Items.Count; i++)
+            List<int> index = new List<int>();
+            for (int i = 0; i < textBox1.Text.Split(' ').Length; i++)
             {
-                for (int j = 0; j < listBox1.Items.Count; j++)
+                for (int j = 0; j < textBox1.Text.Split(' ').Length; j++)
                 {
-                    if(listBox1.Items[i].ToString() == listBox1.Items[j].ToString())
+                    if (i != j && textBox1.Text.Split(' ')[i] == textBox1.Text.Split(' ')[j]) 
                     {
-                        
+                        comboBox1.Items.Add(textBox1.Text.Split(' ')[j]);
+                        index.Add(j);
                     }
-
                 }
             }
         }

@@ -19,40 +19,49 @@ namespace Практика
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            int y = int.Parse(maskedTextBox2.Text);
-            int x = int.Parse(maskedTextBox1.Text);
-            if (x == 0 && y == 0)
+            try
             {
-                MessageBox.Show("Нули нельзя");
-            }
 
 
-
-
-            if (x < y)
-            {
-                if (x < 0)
+                int y = int.Parse(maskedTextBox2.Text);
+                int x = int.Parse(maskedTextBox1.Text);
+                if (x == 0 && y == 0)
                 {
-                    maskedTextBox1.Text = "0";
+                    MessageBox.Show("Нули нельзя");
+                    return;
+                }
 
+
+
+
+                if (x < y)
+                {
+                    if (x < 0)
+                    {
+                        maskedTextBox1.Text = "0";
+
+                    }
+                    else
+                    {
+                        maskedTextBox1.Text = "1";
+                    }
                 }
                 else
                 {
-                    maskedTextBox1.Text = "1";
+                    if (y < 0)
+                    {
+                        maskedTextBox2.Text = "0";
+
+                    }
+                    else
+                    {
+                        maskedTextBox2.Text = "1";
+                    }
                 }
             }
-            else
+            catch
             {
-                if (y < 0)
-                {
-                    maskedTextBox2.Text = "0";
-
-                }
-                else
-                {
-                    maskedTextBox2.Text = "1";
-                }
+                MessageBox.Show("Введи значения ");
             }
         
              

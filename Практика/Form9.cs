@@ -38,6 +38,10 @@ namespace Практика
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+
+          
             int Min;
             int Max;
             int iMax;
@@ -73,6 +77,11 @@ namespace Практика
 
                     dataGridView1.Rows[i].Cells[j].Value = a[i, j];
                 }
+            }
+            }
+            catch
+            {
+                MessageBox.Show(" ");
             }
         }
     }
