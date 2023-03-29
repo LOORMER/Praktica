@@ -19,6 +19,10 @@ namespace Практика
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+
+            
             double x = Convert.ToDouble(maskedTextBox1.Text);
             double y;
             double ctg = Math.Pow(1 / Math.Tan(x), 3);
@@ -47,6 +51,18 @@ namespace Практика
                 y = Math.Round(y, 2);
                 label2.Text = (y.ToString());
             }
+            }
+            catch
+            {
+                MessageBox.Show(" ВВедите x ");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 kuku = new Form1();
+            kuku.Show();
+            this.Hide();
         }
     }
 }

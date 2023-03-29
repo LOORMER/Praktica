@@ -51,6 +51,11 @@ namespace Практика
 
         }
 
-        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 ku = new Form1();
+            ku.Show();
+            this.Hide();
+        }
     }
 }

@@ -64,5 +64,12 @@ namespace Практика
         {
             button2.Enabled = false;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form1 kuku = new Form1();
+            kuku.Show();
+            this.Hide();
+        }
     }
 }

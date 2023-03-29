@@ -21,7 +21,7 @@ namespace Практика
 
         private void button1_Click(object sender, EventArgs e)
         {
-            textBox1.Enabled = false;
+            
             label1.Text = DateTime.Now.ToShortDateString() + "," + DateTime.Now.ToLongDateString();
             Timer time = new Timer();
             time.Interval = 1000;
@@ -51,6 +51,16 @@ namespace Практика
             Form1 back = new Form1();
             back.Show();
             this.Hide();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form16_Load(object sender, EventArgs e)
+        {
+            textBox1.Enabled = false;
         }
     }
 }

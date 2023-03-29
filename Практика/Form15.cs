@@ -26,6 +26,10 @@ namespace Практика
         {
             if (radioButton1.Checked)
             {
+              
+
+
+
                 try
                 {
 
@@ -52,7 +56,7 @@ namespace Практика
                 }
                 catch
                 {
-                    MessageBox.Show("ЧТО УГОДНО");
+                   MessageBox.Show("Нельзя");
                 }
             }
             
@@ -67,6 +71,11 @@ namespace Практика
         {
             if (radioButton2.Checked)
             {
+                button1.Enabled = false;
+                maskedTextBox1.Enabled = false;
+                maskedTextBox2.Enabled = false;
+
+                maskedTextBox3.Enabled = false;
                 try
                 {
 
@@ -93,9 +102,22 @@ namespace Практика
                 }
                 catch
                 {
-                    MessageBox.Show("ЧТО УГОДНО");
+                    MessageBox.Show("Нельзя");
                 }
             }
+        }
+
+        private void Form15_Load(object sender, EventArgs e)
+        {
+           
+            
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form1 kuku = new Form1();
+            kuku.Show();
+            this.Hide();
         }
     }
 }

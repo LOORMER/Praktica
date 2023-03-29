@@ -27,6 +27,8 @@ namespace Практика
                 listBox2.Items.Add(a[i]);
                 listBox1.Items.Add(a[i]);
             }
+            button2.Enabled = true;
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -78,9 +80,12 @@ namespace Практика
             {
                 listBox1.Items.Add(item);
             }
+            button5.Enabled = true;
+            button6.Enabled = true;
+            button3.Enabled = true;
 
-            
-            
+
+
 
 
         }
@@ -125,6 +130,19 @@ namespace Практика
             }
         }
 
-       
+        private void Form11_Load(object sender, EventArgs e)
+        {
+            button2.Enabled = false;
+            button5.Enabled = false;
+            button6.Enabled = false;
+            button3.Enabled = false;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form1 kuku = new Form1();
+            kuku.Show();
+            this.Hide();
+        }
     }
 }

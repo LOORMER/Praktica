@@ -41,5 +41,12 @@ namespace Практика
                 g.DrawEllipse(Pens.Black, x--, y--, 10, 10);
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 kuku = new Form1();
+            kuku.Show();
+            this.Hide();
+        }
     }
 }

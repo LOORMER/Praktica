@@ -10,22 +10,19 @@ using System.Windows.Forms;
 
 namespace Практика
 {
-    public partial class Form19 : Form
+    public partial class Form27 : Form
     {
-        public Form19()
+        public Form27()
         {
             InitializeComponent();
         }
 
-        private void axWindowsMediaPlayer1_Enter(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            axWindowsMediaPlayer1.URL = @"C:\ Windows\Media\Alarm10.wav";
-            axWindowsMediaPlayer1.openPlayer( @"C:\ Windows\Media\Alarm10.wav");
-            axWindowsMediaPlayer1.Ctlcontrols.play();
-
+            System.Diagnostics.Process.Start(@"D:\Практика ПронинЩербаков\sp.html");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             Form1 kuku = new Form1();
             kuku.Show();

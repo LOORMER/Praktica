@@ -22,7 +22,8 @@ namespace Практика
         private void button1_Click(object sender, EventArgs e)
         {
            textBox1.Text = File.ReadAllText(@"D:\Практика ПронинЩербаков\KU.txt");
-
+            button2.Enabled = true;
+            button3.Enabled = true;
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -48,6 +49,19 @@ namespace Практика
                 sw.WriteLine(textBox1.Text);
                 sw.Close();
             }
+        }
+
+        private void Form23_Load(object sender, EventArgs e)
+        {
+            button2.Enabled = false;
+            button3.Enabled = false;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form1 kuku = new Form1();
+            kuku.Show();
+            this.Hide();
         }
     }
 }

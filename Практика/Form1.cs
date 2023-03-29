@@ -19,7 +19,7 @@ namespace Практика
 
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
 
@@ -197,6 +197,13 @@ namespace Практика
         {
             Form24 fr24 = new Form24();
             fr24.Show();
+            this.Hide();
+        }
+
+        private void справкаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form27 spravka = new Form27();
+            spravka.Show();
             this.Hide();
         }
     }

@@ -20,7 +20,10 @@ namespace Практика
 
         private void button1_Click(object sender, EventArgs e)
         {
+           
+            
 
+           
             str = textBox1.Text;
             char str_char = 'а';
             for (int i = 0; i < str.Length; i++)
@@ -31,6 +34,14 @@ namespace Практика
                 }
             }
             textBox1.Text = str;
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 kuku = new Form1();
+            kuku.Show();
+            this.Hide();
         }
     }
 }
